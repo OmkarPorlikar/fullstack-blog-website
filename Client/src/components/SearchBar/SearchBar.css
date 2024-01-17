@@ -1,0 +1,25 @@
+.search-bar{
+    background-color: white;
+    padding: 0.5rem 1rem ;
+    border-radius: 9px;
+    border: 3px solid rgba(120,120,120,0.374);
+    display: flex;
+    justify-content: space-between;
+    /* gap: 3rem; */
+    width: 100%;
+}
+.search-bar>input{
+    width: 70%;
+    border: none;
+    outline: none;
+}
+
+.Button {
+    width: 100px;
+    border: none;
+    background-color: teal;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
