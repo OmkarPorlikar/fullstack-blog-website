@@ -55,6 +55,11 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage:storage });
 
+app.get("/", (req, res)=>{
+res.send("Hi nice to see u here")
+}
+       )
+
 app.post(
   "/api/upload",
   authenticateToken,  // Assuming this middleware checks the token
