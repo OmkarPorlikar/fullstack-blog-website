@@ -38,7 +38,6 @@ app.use('/api' ,router);
 
 
 app.use('/api/user',useRouter);
-// app.use('/api/cat/',catRouter )
 app.use('/api/post' ,postRoute)
 passport.use(googleStrategy);
 
@@ -55,26 +54,6 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage:storage });
-upload.any = (req, res, next) => {
-    upload(req, res, (err) => {
-      if (err) {
-        console.error('Multer Error:', err);
-        return res.status(500).json({ error: 'Error uploading file.' });
-      }
-      next();
-    });
-  };
-  
-
-// try{
-// app.post("/api/upload", authenticateToken,  upload.single("file"),  (req, res) => {
-//   console.log("uploading image")
-//   res.status(200).json("File has been uploaded");
-// });
-// }
-// catch(error){
-// console.log(error)
-// }
 
 app.post(
   "/api/upload",
