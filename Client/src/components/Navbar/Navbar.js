@@ -14,7 +14,7 @@ function Navbar() {
     const navigate = useNavigate()
 const dispatch = useDispatch();
 // new data --------------------------------------------------------------------------------------------//
-const pf  = 'http://localhost:9080/images/'
+const pf  = 'https://second-server-eosin.vercel.app/images/'
 const [ShowConfimation , setShowConfirmation] = useState(false)
 const user = useSelector((state)=>state.user.user)
 console.log("token",user?.token)
