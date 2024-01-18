@@ -14,7 +14,7 @@ export default function SinglePost(props) {
 
   console.log(props , "from single post")
  
-  const PF = 'http://localhost:9080/images/'
+  const PF = 'https://second-server-eosin.vercel.app/images/'
   const user = useSelector((state)=>state.user.user)
 
  
