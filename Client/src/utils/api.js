@@ -3,7 +3,7 @@ import axios from "axios"
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 export const api = axios.create({
-    baseURL:"http://localhost:9080/api/"
+    baseURL:"https://second-server-eosin.vercel.app/api/"
 })
 export const getPost = async(search) =>{
     const userSearch = search? search : ''
